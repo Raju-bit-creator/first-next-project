@@ -1,12 +1,3 @@
-// import { useRouter } from "next/router"
-
-// function ProductDetail() {
-//     const router = useRouter()
-//     const productId = router.query.productId
-//     return <h4>this is product detail  {productId}</h4>
-// }
-// export default ProductDetail
-
 
 interface ProductDetailProps {
     params: {

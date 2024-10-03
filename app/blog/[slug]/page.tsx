@@ -25,20 +25,7 @@
 
 // }
 
-// async function BlogDetail({ params }) {
-//     // Fetch the specific blog post using the dynamic parameter
-//     const response = await fetch(`https://jsonplaceholder.typicode.com/posts/${params.postId}`);
-//     const post = await response.json();
 
-//     return (
-//         <>
-//             <h2>{post.id} {post.title}</h2>
-//             <p>{post.body}</p>
-//         </>
-//     );
-// }
-
-// export default BlogDetail;
 
 async function BlogDetail({ params }) {
     console.log('params:', params); 

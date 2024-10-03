@@ -19,19 +19,32 @@ function CommentsPage() {
         })
         const data = await response.json()
         console.log(data);
+        fetchComments()
 
 
     }
     const deleteComment = async (commentId) => {
-        const response = await fetch(`api/comments/${commentId}`,{
+        const response = await fetch(`api/comments/${commentId}`, {
             method: 'DELETE',
 
         })
-        const data =await response.json()
+        const data = await response.json()
         console.log(data);
         fetchComments()
-        
+
     }
+    // const editComment = async(commentId) => {
+    //     const response = await fetch(`api/comments/${commentId}`, {
+    //         method: 'PUT',
+    //     })
+    //     const data= await response.json()
+    //     console.log(data);
+    //     fetchComments()
+
+        
+
+
+    // }
     return (
         <>
             <input type='text' value={comment} onChange={e => setComment(e.target.value)}></input>
@@ -43,6 +56,7 @@ function CommentsPage() {
                         <div key={comment.id}>
                             {comment.id}{comment.text}
                             <button onClick={() => deleteComment(comment.id)}>Delete</button>
+                            {/* <button onClick={() => editComment(comment.id)}>Edit</button> */}
                         </div>
                     )
                 })

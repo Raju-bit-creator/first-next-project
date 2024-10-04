@@ -23,6 +23,14 @@ export default function About() {
       <>
       
         <h4>This is the about us page</h4>
+       {["1","2", "3" ].map((path)=>{
+        return(
+            <div key={path}>
+                <img src={`/assets/${path}.jpg`} alt="it images" width={200} height={400}></img>
+            </div>
+        )
+       })}
+
       </>
     );
   }

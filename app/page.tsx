@@ -7,6 +7,7 @@ export default function Home() {
       <Link href={"/blog"}>
         blog
       </Link>
+      <h1 className="text-3xl font-bold underline">hello nepal</h1>
       <Link href={"/products"}>Produts</Link>
 
     </div>
